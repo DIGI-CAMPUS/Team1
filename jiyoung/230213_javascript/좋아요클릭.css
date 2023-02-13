@@ -1,0 +1,14 @@
+body {
+}
+.like > button {
+  border: none;
+  border-radius: 50%;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.not {
+  margin: 20px;
+}
