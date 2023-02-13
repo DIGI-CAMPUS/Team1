@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <h2>Login</h2>
+      <form id="login-form" onsubmit="return false">
+        <!-- method="post" action="서버의url"  -->
+        <input
+          type="text"
+          name="userID"
+          id="userID"
+          placeholder="아이디를 입력해주세요"
+        />
+        <input
+          type="password"
+          name="userPwd"
+          id="userPwd"
+          placeholder="비밀번호를 입력해주세요"
+        />
+        <label for="remember-check">
+          <input type="checkbox" id="remember-check" />아이디 저장하기
+        </label>
+        <input id="submit_btn" type="submit" value="Login" />
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
