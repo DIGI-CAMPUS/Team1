@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 연습</title>
+  </head>
+  <body>
+    <form id="loginpage">
+      <h1>회원인증</h1>
+      <fieldset style="width: 100px">
+        필수입력<br /><br />
+        아이디:
+        <input
+          type="text;"
+          id="userID"
+          placeholder="아이디를 입력하세요."
+          required
+        /><br /><br />
+        비밀번호:
+        <input
+          type="password"
+          id="userPW"
+          placeholder="비밀번호를 입력하세요."
+          required
+        />
+        <input type="submit" id="login" value="Log-In" />
+      </fieldset>
+
+      <fieldset style="width: 100px">
+        선택입력<br /><br />
+        성명: <input type="text" /> <br /><br />
+        성별: 남<input type="radio" name="gender" /> 여<input
+          type="radio"
+          name="gender"
+        /><br />
+      </fieldset>
+    </form>
+    <script src="login2.js"></script>
+  </body>
+</html>

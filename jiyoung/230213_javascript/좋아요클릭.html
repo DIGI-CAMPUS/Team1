@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="좋아요클릭.css" />
+  </head>
+  <body>
+    <div class="like">
+      <button id="btbt" onclick="incrementClick()">
+        <img src="하트.png" width="100px" />
+        <div><h3 id="counter">0</h3></div>
+      </button>
+    </div>
+    <div class="not">
+      <button onclick="reset()">리셋하기!</button>
+    </div>
+
+    <script>
+      let counterVal = 0;
+
+      function updateDisplay(val) {
+        document.getElementById("counter").innerHTML = val;
+      }
+      function incrementClick() {
+        updateDisplay(++counterVal);
+        console.log(counterVal);
+        document.getElementById("btbt").style.color = "red";
+      }
+      /*function changeRed() {
+        document.getElementById("btbt").style.color = "red";
+      }*/
+      function reset() {
+        counterVal = 0;
+        updateDisplay(counterVal);
+        console.log(counterVal);
+      }
+    </script>
+  </body>
+</html>
