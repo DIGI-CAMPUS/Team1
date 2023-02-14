@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>style</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+      .blue-color {
+        font-size: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p id="text" class="red-color blue-color">text</p> -->
+    <p id="text">text</p>
+    <script>
+      const id = document.getElementById("text");
+      id.classList.add("red-color");
+      id.classList.add("blue-color");
+      // const ee = document.querySelector(".red-color"); //노드선택
+      id.classList.remove("red-color");
+      id.classList.remove("blue-color");
+       console.log(id.classList);
+    </script>
+  </body>
+</html>
