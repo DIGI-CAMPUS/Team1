@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scrollTo</title>
+    <style>
+      body {
+        width: 5000px;
+        height: 5000px;
+        background: linear-gradient(#babacc, rgb(13, 20, 42));
+      }
+      div {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button onclick="sTo()">scrollTo(4000)</button>
+      <button onclick="sBy()">scrollBy(200)</button>
+    </div>
+    <script>
+      //scroll To는 지정된 위치로 가는 것  scrollBy는 해당 수치만큼 움직이는 것
+      function sTo() {
+        window.scrollTo({ top: 1000, behavior: "smooth" }); // x좌표, y좌표
+        // window.scrollTo {left : 100, top : 200};
+      }
+      function sBy() {
+        window.scrollBy({ top: 500, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
