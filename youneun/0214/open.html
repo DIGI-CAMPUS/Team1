@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>open</title>
+  </head>
+  <body>
+    <!-- 
+    <button onclick="popup()">팝업</button> -->
+    <button onclick="popupclose">팝업닫기</button>
+    <script>
+      function popupclose() {
+        window.close("http://www.naver.com", "팝업", "width=500, height =500");
+        //window.open('popup.html', '팝업', 'width=200, height=100, left=400, ')
+        //window.open(경로, 이름, 속성)  이름을 입력하면 여러번 클릭해도 창을 한번만 띄운다!
+      }
+
+      /*       function popup() {
+        window.open("http://www.naver.com", "팝업", "width=500, height =500");
+        //window.open('popup.html', '팝업', 'width=200, height=100, left=400, ')
+        //window.open(경로, 이름, 속성)  이름을 입력하면 여러번 클릭해도 창을 한번만 띄운다!
+      } */
+    </script>
+  </body>
+</html>
