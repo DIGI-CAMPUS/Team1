@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="로그인페이지.css" />
+  </head>
+  <body>
+    <main class="form-signin">
+      <form onsubmit="return false">
+        <div class="idclass">
+          <b>ID : </b>
+          <input type="id" id="userid" placeholder="ID를 입력하세요." />
+        </div>
+
+        <div class="Passwordclass">
+          <b>비밀번호 : </b>
+          <input
+            type="password"
+            id="userpw"
+            placeholder="비밀번호를 입력하세요."
+          />
+        </div>
+
+        <div class="checkbox">
+          <label> <input type="checkbox" value="Remember" /> 기억하기 </label>
+        </div>
+        <button type="submit" id="signinbutton" onclick="signinFunc()">
+          <b>Log in</b>
+        </button>
+      </form>
+    </main>
+    <script>
+      /*var sigininbutton = document.getElementById("signinbutton");
+      sigininbutton.addEventListener("click", signinFunc); */
+      function signinFunc() {
+        var userid = document.getElementById("userid").value;
+        var userpw = document.getElementById("userpw").value;
+        if (userid == "KBDIGI" && userpw == "0000") {
+          let yes = confirm("로그인 성공했습니다.");
+          console.log(yes);
+          if (yes == true) {
+            console.log("고고");
+            location.href = "https://www.naver.com/";
+          } else {
+            location.reload();
+          }
+        } else if (userid == "KBDIGI") {
+          console.log("쯧");
+          alert("비밀번호를 확인하세요.");
+        } else {
+          alert("아이디를 확인하세요");
+        }
+      }
+    </script>
+  </body>
+</html>

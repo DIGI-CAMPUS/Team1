@@ -1,0 +1,34 @@
+.form-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.idclass {
+  background-color: aqua;
+  max-width: 330px;
+  padding: 15px;
+  display: flex;
+}
+
+.Passwordclass {
+  background-color: rgb(183, 255, 0);
+  max-width: 330px;
+  padding: 15px;
+  display: flex;
+}
+
+.checkbox {
+  background-color: rgb(215, 158, 202);
+  max-width: 330px;
+  padding: 15px;
+
+  font-size: small;
+}
+
+#signinbutton {
+  margin-left: 90px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
