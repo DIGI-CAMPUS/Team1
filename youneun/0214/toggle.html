@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+      #text {
+        font-size: 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text" class="red-color">text</p>
+
+    <script>
+      const ee = document.querySelector("#text");
+      setInterval(function () {
+        ee.classList.toggle("red-color");
+      }, 1000);
+    </script>
+  </body>
+</html>
