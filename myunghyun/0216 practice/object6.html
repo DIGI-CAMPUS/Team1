@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event object</title>
+  <style></style>
+</head>
+  <body>o
+    <p>text-1</p>
+    <p>text-2</p>
+    <p>text-3</p>
+    <script>
+      const pEl = document.querySelectorAll("p");
+      
+      pEl.forEach((el) => {
+        el.addEventListener("click", function() {
+          console.log(this);
+
+          if(this.style.color ==="red") {
+            this.style.color = "black";
+          } else {
+            this.style.colr = "red";
+          }
+        });
+      })
+    </script>
+  </body>
+</html>
