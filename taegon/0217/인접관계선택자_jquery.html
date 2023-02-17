@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        var style_1 = {
+          "background-color": "#0ff",
+          border: "4px solid #F00",
+        };
+        var style_2 = {
+          "background-color": "#ff0",
+          border: "4px dashed #f00",
+        };
+
+        // $(".txt").prev().css(style_1);
+
+        $(".txt + p").css(style_2); //하단 내용3이 적용이 됨. .txt 의 + 는 다음 p 를 의미하는듯?
+        //                                          // ++ p 혹은 + p + p 로 할 경우 다다음 태그에 적용    +
+        // $(".txt").next().next().css(style_2);
+
+        // $(".txt").prevAll().css(style_1);       // 하위나  상위 선택자가 아닌 동일 위치 선택자만 가능한듯
+        // $(".txt").nextAll().css(style_2);
+
+        // $(".txt").prevUntil().css(style_1);
+        // $(".txt").nextUntil().css(style_2);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>d</h1>
+    <div id="tt">
+      1
+      <h1>인접 관계 선택자</h1>
+      <p>내용1</p>
+      <p>내용1</p>
+      <p class="txt">내용2</p>
+      <p>내용3</p>
+      <p>내용4</p>
+      <p class="t2">내용1</p>
+    </div>
+  </body>
+</html>
