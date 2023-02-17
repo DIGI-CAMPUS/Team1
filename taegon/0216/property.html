@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>property listener</title>
+  </head>
+  <body>
+    <button>클릭</button>
+
+    <script>
+      const btnEl = document.querySelector("button");
+      btnEl.onclick = function () {
+        alert("click");
+      };
+
+      // 함수를 정의하는 2번째 방법
+      // btnEl.onclick = () => {
+      //     alert("click");       // 대괄호{} 안에 내용을 소괄호() 안에 넣겠다는 것이 화살표 함수의 의미
+      // }
+
+      // 함수를 정의하는 3번째 방법
+      // btnEl.onclick = clickEvent;
+      // function clickEvent () {
+      //     alert("click")
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addEventListener</title>
+  </head>
+  <body>
+    <button>클릭</button>
+
+    <script>
+      const btnEl = document.querySelector("button");
+      //   btnEl.addEventListener("click", function () {
+      //     //<노드>.addEventListener("이벤트타입", 이벤트 함수) // on 제거
+      //     alert("button click");
+      //   });
+
+      const clickEvent = () => {
+        // 클릭이벤트라는 변수를 새로 정의함과 동시에 함수로 선언
+        alert("button click");
+      };
+      btnEl.addEventListener("click", clickEvent); //선언된 함수를 이벤트로 사용
+    </script>
+  </body>
+</html>
