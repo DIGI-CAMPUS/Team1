@@ -1,0 +1,117 @@
+* {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Kalam', cursive;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_960_720.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#container {
+  width: 50vw;
+  height: 80vh;
+  padding: 0;
+  margin: 10vh 25vw;
+  z-index: 1;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#logBox {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+#openLogin {
+  width: 2vw;
+  height: 80vh;
+  position: absolute;
+  left: 75vw;
+  z-index: 100;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#box {
+  width: 50vw;
+  height: 80vh;
+  background-color: rgba(f, f, f, 0.5);
+}
+
+#login {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  z-index: 5;
+}
+
+#logArea {
+  width: 30vw;
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 0;
+  border: 1px solid black;
+}
+
+#logArea > h5 {
+  margin: 1vh 0;
+  font-size: 3rem;
+  height: 8vh;
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.2px rgb(155, 155, 155) solid;
+}
+
+#logArea input {
+  width: 79.5%;
+  margin: 3% 10%;
+  height: 5vh;
+  border: none;
+  border-bottom: 3px solid rgb(129, 129, 129);
+  color: rgb(83, 83, 83);
+}
+
+#forgot {
+  margin: 1vh 3vw;
+  height: 5vh;
+}
+
+#logInBtn {
+  width: 20vw;
+  height: 5vh;
+  margin: 0 5vw;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(61, 61, 61);
+  border-radius: 20px;
+}
+ #signup{
+  width: 100%;
+  height: 8vh;
+  text-align: center;
+  line-height: 8vh;
+ }
+
+ #signup span{
+  color: blue;
+  font-weight: bold;
+ }
+
+ a {
+  text-decoration: none;
+ }
