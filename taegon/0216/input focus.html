@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event2</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" onfocus="focusEvent()" onblur="blurEvent()" />
+      <!-- 온포커스는 텍스트 입력창을 클릭하여 입력중인경우 발생, 온블러는 반대로 입력창을 빠져나온 경우 -->
+    </form>
+
+    <script>
+      function focusEvent() {
+        console.log("focus on");
+      }
+      function blurEvent() {
+        console.log("focus out");
+      }
+    </script>
+  </body>
+</html>
