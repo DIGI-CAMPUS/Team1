@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute 와 classList</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+      .fs40 {
+        font-size: 60px;
+      }
+      .blue-color {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.naver.com" class="fs40">NAVER</a>
+
+    <script>
+      const aEl = document.querySelector("a"); //선택
+      aEl.classList.add("blue-color"); //class 속성 추가
+      aEl.setAttribute("class", "red-color"); // 기존  class 속성을 초기화하고 내가 지정한 class 스타일 속성 값만 추가
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      // $(function () {
+      //   $("#22")
+      //     .parent()                                 // #22 를 가진 li 태그의 부모 태그인 ul을 불러와서 같이 묶음
+      //     .css("border", "4px solid #f00");
+      // });
+      $(function () {
+        $("#22 > h1").css("border", "4px solid #f00");
+
+        $("#22 > section").children().css({
+          "background-color": "skyblue",
+          border: "4px solid #ff0",
+        });
+      });
+      $(function () {
+        $("#kb")
+          .css("border", "5px solid red")
+          .children() //위엣놈을 먹이고나서 아래 아들을 따로 지정해서도 가능 편리함
+          .children() // 연속해서도 사용가능
+          .css("border", "5px solid blue");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>인접 관계 선택자</h1>
+    <div id="22">
+      <h1>ddd</h1>
+      <section>
+        <h1>ddd</h1>
+        <p>ppp</p>
+      </section>
+      <ul id="kb">
+        <li>리스트1</li>
+        <ul>
+          <li>리스트22</li>
+          <li>리스트22-1</li>
+        </ul>
+        <li>리스트2</li>
+        <li>리스트3</li>
+      </ul>
+    </div>
+    <h2 id="kb2">선택자</h2>
+    <a>국민</a>
+    <h3>직접 선택자</h3>
+  </body>
+</html>

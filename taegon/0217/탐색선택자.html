@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        //첫 번째와 마지막 태그에 입히기
+        // $("#meun h2:first").css({ "background-color": "#ff0" });
+        // $("#meun li:last").css({ "background-color": "#0ff" });
+
+        //짝수와 홀수 태그로 구분하기
+        // $("#meun li:even").css({ "background-color": "red" }); //홀수 인덱스 (짝수 제외)  0부터 시작
+        // $("#meun li:odd").css({ "background-color": "blue" }); //짝수 인덱스 (홀수 제외)  0부터 시작
+
+        //인덱스로 찾기
+        $("#meun li")
+          .eq(2) //인덱스 2
+          .css({ "background-color": "red" });
+        $("#meun li:lt(2)") //인덱스 2보다 작은 인덱스
+          .css({ "background-color": "blue" });
+        $("#meun li:gt(2)") //인덱스 2보다 큰 인덱스  greater
+          .css({ "background-color": "green" });
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="meun">
+      <h2>dd</h2>
+      <h2>dd</h2>
+      <h2>dd</h2>
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+      <li>내용5</li>
+      <li>내용6</li>
+    </ul>
+  </body>
+</html>
