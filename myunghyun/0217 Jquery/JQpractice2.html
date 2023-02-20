@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js"></script>
+  <script>
+    // $(function() {
+    //   $("#meun li:even") //even 짝수인데 index는 0부터 시작이므로 실제로는 홀수번째 선택됨 
+    //   .css({"background-color" : "yellow"});
+    //   $("#meun h2:odd") //odd 홀수인데 index는 0부터 시작이므로 실제로는 짝수번째 선택됨
+    //   .css({"background-color" : "skyblue"});
+    // })
+    // $(function() {
+    //   $("#meun li").eq(2) // 인덱스 2
+    //   .css({"background-color" : "yellow"});
+    //   $("#meun li:lt(2)") // 인덱스가 2보다 큰 인덱스
+    //   .css({"background-color" : "green"});
+    //   $("#meun li:gt(2)") // 인덱스가 2보다 작은 인덱스
+    //   .css({"background-color" : "purple"});
+    // })
+    $(function() {
+      $("#meun1 li:nth-child(1)") 
+      .css({"background-color" : "yellow"});
+      $("#meun1 li:nth-child(2n)") 
+      .css({"background-color" : "green"});
+      $("#meun2 li:nth-last-child(3)")
+      .css({"background-color" : "purple"});
+    })
+  </script>
+</head>
+<body>
+  <h1>탐색 선택자</h1>
+  <ul id="meun1">
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+    <li>내용5</li>
+  </ul>
+  <ul id="meun2">
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+    <li>내용5</li>
+  </ul>
+</body>
+
+</html>
