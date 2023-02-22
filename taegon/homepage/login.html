@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div id="loginbox">
+      <h1>Login</h1>
+      <form id="loginform">
+        <input
+          type="text"
+          id="id"
+          name="id"
+          placeholder="아이디를 입력하세요."
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="비밀번호를 입력하세요."
+        />
+        <label for="checkbox1" id="checkbox2">
+          <input type="checkbox" id="checkbox1" />아이디 저장
+        </label>
+        <input type="submit" id="login" value="로그인" />
+        <a href="#">아이디 / 비밀번호 찾기</a>
+        <p>ID : 123 / PW : 123 을 입력하면 고양이가 나와요.</p>
+        <p>틀려도 나와요.</p>
+      </form>
+    </div>
+    <div id="cat">
+      <img src="images/고양이.gif" width="100px" />
+    </div>
+    <div id="cat2">
+      <img src="images/고양이2.gif" width="100px" />
+    </div>
+    <script src="javascript/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+@import "header_nav.css";
+@import "footer.css";
+@import "quickicon.css";
+
+@font-face {
+  font-family: "양진체";
+  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  box-sizing: border-box; /* 박스 영역은 테두리까지 */
+  font-family: "양진체";
+}
+a {
+  text-decoration: none; /* 텍스트 링크 밑줄 없애기 */
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+#container {
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  width: 1200px; /* 너비 */
+}

@@ -1,0 +1,182 @@
+@import "header_nav.css";
+@import "footer.css";
+
+/*로고에 스타일을 입히기 위해 font.google.com 사이트에서 코드를 가져옴*/
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  box-sizing: border-box; /* 박스 영역은 테두리까지 */
+}
+a {
+  text-decoration: none; /* 텍스트 링크 밑줄 없애기 */
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+#container {
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  width: 1200px; /* 너비 */
+}
+
+/******************/
+/*  팝업스토어    */
+/******************/
+
+@font-face {
+  font-family: "양진체";
+  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+article > img {
+  width: 650px;
+  height: 100px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+
+.photo {
+  width: 600px;
+  height: 400px;
+}
+
+.context {
+  width: 600px;
+  height: 500px;
+  font-family: "양진체";
+}
+
+#popupstoretitle {
+  float: left;
+  margin-top: 40px;
+  margin-left: 30%;
+}
+
+#article1 {
+  width: 100%;
+  height: 500px;
+  background-color: #dcebdd;
+}
+
+#article2 {
+  width: 100%;
+  height: 500px;
+}
+
+#article3 {
+  width: 100%;
+  height: 500px;
+  background-color: #dcebdd;
+}
+
+#photo1 {
+  float: left;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 10%;
+}
+
+.store1context {
+  float: left;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+#photo2 {
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+  border-radius: 10%;
+}
+
+.store2context {
+  float: left;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+#photo3 {
+  float: left;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 10%;
+}
+
+.store3context {
+  float: left;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+#store1Name {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(126, 124, 124);
+}
+
+#store1Location {
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(145, 142, 142);
+}
+
+#store1Intro {
+  margin-top: 30px;
+  font-size: 20px;
+  color: darkgray;
+}
+
+#store2Name {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(126, 124, 124);
+}
+
+#store2Location {
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(145, 142, 142);
+}
+
+#store2Intro {
+  margin-top: 30px;
+  font-size: 20px;
+  color: darkgray;
+}
+
+#store3Name {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(126, 124, 124);
+}
+
+#store3Location {
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(145, 142, 142);
+}
+
+#store3Intro {
+  margin-top: 30px;
+  font-size: 20px;
+  color: darkgray;
+}
+
+.links {
+  color: black;
+  float: right;
+  margin-top: 100px;
+}
+
+.links:hover {
+  color: rgb(145, 142, 142); /* 마우스 오버하면 색상 바뀜 */
+  text-shadow: 0 -1px rgb(255, 255, 255); /* 글자가 너무 굵어지지 않도록 */
+}

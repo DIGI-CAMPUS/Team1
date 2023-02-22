@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성수 나들이</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--html 파일을 css파일과 연결-->
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <h1>성수 나들이</h1>
+        </a>
+      </div>
+      <nav>
+        <ul id="topMenu">
+          <li><a href="#">맛집 <span>▼</span></a>
+            <ul>
+              <li><a href="밥집.html">밥집</a></li>
+              <li><a href="조별과제.html">카페</a></li>
+            </ul>
+          </li>
+          <li><a href="#">놀거리<span>▼</span></a>
+            <ul>
+              <li><a href="popupstore.html">팝업스토어</a></li>
+              <li><a href="shopping.html">쇼핑</a></li>
+              <li><a href="star.html">별찍기</a></li>
+            </ul>
+          </li>
+          <li><a href="board.html">게시판 </a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 메인영역 -->
+    <div id="main">
+      <div id="contents">
+        <div id="links">
+          <ul>
+            <li>
+              <a href="밥집.html">
+                <span id="quick-icon1"></span>
+                <p>밥집</p>
+              </a>
+            </li>
+            <li>
+              <a href="조별과제.html">
+                <span id="quick-icon2"></span>
+                <p>카페</p>
+              </a>
+            </li>
+            <li>
+              <a href="popupstore.html">
+                <span id="quick-icon3"></span>
+                <p>팝업스토어</p>
+              </a>
+            </li>
+            <li>
+              <a href="shopping.html">
+                <span id="quick-icon4"></span>
+                <p>쇼핑</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 공지사항 및 갤러리 탭 메뉴 -->
+        <div id="tabMenu">
+          <input type="radio" id="tab1" name="tabs" checked>
+          <label for="tab1">공지사항</label>
+          <input type="radio" id="tab2" name="tabs">
+          <label for="tab2">갤러리</label>
+          <div id="notice" class="tabContent">
+            <h2>공지사항 내용입니다.</h2>
+            <ul>
+              <li>성수동 소식입니다</li>
+              <li>[New Open] BERLUTI</li>
+              <li>[참가 모집] House of Windsor 팝업스토어 런칭 행사</li>
+              <li>향수공방 레트르, 조향체험 ing</li>
+              <li>밥플러스 성수점, 새로운 맛집 등극</li>
+            </ul>
+          </div>
+          <!-- 하단 갤러리 내용 -->
+          <div id="gallery" class="tabContent">
+            <h2>갤러리 내용입니다.</h2>
+            <ul>
+              <li><img src="images/img-1.jpg" width="120px"></li>
+              <li><img src="images/img-2.jpg" width="120px"></li>
+              <li><img src="images/img-3.jpg" width="120px"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 메인영억끝 -->
+
+  <!-- 버튼 영역 -->
+  <div id="scroll">
+    <button onclick = "sto()"><img src="images/scrollto.png" width="30px"></button>
+    <button onclick = "home()"><img src="images/인스타-홈.png" width="30px"></button>
+    <button onclick = "login()">로그인</button>
+  </div>
+
+  <!-- 푸터 -->
+  <footer>
+    <div id="bottomMenu">
+      <ul>
+        <li><a href="#">회사 소개</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">사이트맵</a></li>
+      </ul>
+      <div id="sns">
+        <ul>
+          <li><a href="#"><img src="images/sns-1.png" width="50px"></a></li>
+          <li><a href="#"><img src="images/sns-2.png" width="50px"></a></li>
+          <li><a href="#"><img src="images/sns-3.png" width="50px"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="company">
+      <p>서울특별시 성동구 성수동 *** (대표전화) 02-****-****</p>
+    </div>
+  </footer>
+  </div>
+
+  <!-- 자바스크립트 -->
+  <script>
+  function sto() {
+    window.scrollTo({top : 0, behavior : "smooth"});
+  }
+  function home() {
+    window.open ("index.html", "성수 나들이", "width=1000, height=800")
+  }
+  function login() {
+    location.href="login.html"
+  }
+</script>
+</body>
+
+</html>

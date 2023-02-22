@@ -1,0 +1,106 @@
+article {
+  height: 116\50px;
+  padding-top: 100px;
+}
+article > img {
+  width: 650px;
+  height: 100px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+
+.photo {
+  width: 600px;
+  height: 400px;
+}
+
+.context {
+  width: 550px;
+  height: 500px;
+  font-family: "양진체";
+}
+
+#popupstoretitle {
+  float: left;
+  margin-top: 40px;
+  margin-left: 30%;
+}
+
+#article1 {
+  width: 100%;
+  height: 500px;
+}
+
+#article2 {
+  width: 100%;
+  height: 500px;
+  background-color: #dcebdd;
+}
+#photo1 {
+  float: left;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 10%;
+}
+
+.store1context {
+  float: right;
+  margin-left: 15%;
+  margin-top: 20%;
+}
+
+#photo2 {
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+  border-radius: 10%;
+}
+
+.store2context {
+  width: 300px;
+  float: left;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+#store1Name {
+  padding-left: 700px;
+  padding-right: 80px;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(126, 124, 124);
+}
+
+#store1Location {
+  padding-top: 100px;
+  padding-left: 750px;
+  margin-top: 20px;
+  font-size: 40px;
+  color: rgb(70, 70, 70);
+}
+
+#store1Intro {
+  padding-left: 700px;
+  padding-right: 80px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: darkgray;
+}
+
+#store2Name {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(126, 124, 124);
+}
+
+#store2Location {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(145, 142, 142);
+}
+
+#store2Intro {
+  margin-top: 20px;
+  font-size: 20px;
+  color: darkgray;
+}

@@ -1,0 +1,160 @@
+@import "header_nav.css";
+@import "footer.css";
+
+@font-face {
+  font-family: "양진체";
+  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  box-sizing: border-box; /* 박스 영역은 테두리까지 */
+  font-family: "양진체";
+}
+a {
+  text-decoration: none; /* 텍스트 링크 밑줄 없애기 */
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+#container {
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  width: 1200px; /* 너비 */
+}
+
+article {
+  width: 1200px;
+  height: 1200px;
+}
+footer {
+  width: 100%; /* 너비 */
+  height: 50px; /* 높이 */
+  border-top: 2px solid #222;
+}
+#bottomMenu {
+  width: 50%;
+  height: 20px;
+  position: relative;
+}
+#bottomMenu ul {
+  margin-top: 15px;
+}
+#bottomMenu ul li {
+  float: left; /* 가로로 배치 */
+  padding: 5px 20px;
+  border-right: 1px solid #ddd; /* 항목 오른쪽에 테두리 */
+}
+#bottomMenu ul li:last-child {
+  border: none; /* 마지막 항목에는 오른쪽 테두리 없음 */
+}
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+  font-size: 15px; /* 글자 크기 */
+  color: #666; /* 글자 색 */
+}
+#sns {
+  position: absolute;
+  right: 0; /* 오른쪽 끝에 배치 */
+  height: 50px;
+  padding-right: 170px;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+#sns ul li {
+  float: right;
+  border: none; /* 테두리 없이 */
+  padding: 5px;
+}
+#company {
+  clear: left; /* 플로팅 해제. clear:both도 가능 */
+  margin-top: 25px; /* 위쪽 마진 */
+  margin-left: 20px; /* 왼쪽 마진 */
+}
+p {
+  font-size: 14px; /* 글자 크기 */
+  color: #aaa; /* 글자 색*/
+}
+
+#caffe {
+  width: 1200px;
+  height: 180px;
+  background-color: #266329;
+}
+main {
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
+.imim {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+#logoaa {
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+h2 {
+  text-align: center;
+  margin: 100px;
+}
+h3 {
+  text-align: center;
+}
+#main1 {
+  float: left;
+  width: 1200px;
+  margin-bottom: 30px;
+  margin-top: 0fr30px;
+}
+.list1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  margin: 30px;
+}
+
+#main2 {
+  float: left;
+  background-color: #dcebdd;
+  width: 1200px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.list2 {
+  width: 30%;
+  height: 210px;
+  float: right;
+  margin: 30px;
+}
+.blank {
+  width: 100%;
+}
+#main3 {
+  float: left;
+  width: 1200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.list3 {
+  width: 30%;
+  height: 210px;
+  float: left;
+  margin: 30px;
+}
+
+.imim1 {
+  width: 20%;
+  height: 100%;
+  float: right;
+}
