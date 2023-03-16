@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시판</title>
+  <link rel="stylesheet" href="css/board.css">
+  <script src="javascript/jquery.js"></script>
+  <script src="javascript/board.js"></script>
+</head>
+
+<body>
+  <!-- 상단메뉴 -->  
+  <div id="container">
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <h1>성수 나들이</h1>
+      </a>
+    </div>
+    <nav>
+      <ul id="topMenu">
+        <li><a href="#">맛집 <span>▼</span></a>
+          <ul>
+            <li><a href="밥집.html">밥집</a></li>
+            <li><a href="조별과제.html">카페</a></li>
+          </ul>
+        </li>
+        <li><a href="#">놀거리<span>▼</span></a>
+          <ul>
+            <li><a href="popupstore.html">팝업스토어</a></li>
+            <li><a href="shopping.html">쇼핑</a></li>
+            <li><a href="star.html">별찍기</a></li>
+          </ul>
+        </li>
+        <li><a href="board.html">게시판</a></li>
+        <li><a href="#">문의하기</a></li>
+      </ul>
+    </nav>
+  </header>
+        <!-- 게시판 부분 -->
+  <div class="boardSection">
+    <div class="board">
+      <table class="table">
+        <thead class="thead">
+          <tr>
+            <td>번호</td>
+            <td>제목</td>
+            <td>글쓴이</td>
+            <td>작성일</td>
+            <td>조회수</td>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td>1</td>
+            <td><a href="#" id="board1">집 가고 싶다</a></td>
+            <td>김태곤</td>
+            <td>2023-02-17</td>
+            <td>555</td>
+          </tr>
+        <tbody class="tbody">
+          <tr>
+            <td>2</td>
+            <td><a href="#" id="board2">ㄱㄱ</a></td>
+            <td>김태곤</td>
+            <td>2023-02-17</td>
+            <td>35</td>
+          </tr>
+        </tbody>
+        </tbody>
+      </table>
+    </div>
+    <!-- 검색창 -->
+    <div class="search1">
+      <div class="search2">
+        <div class="search3">
+          <div class="barhead"></div>
+           <input type="text", id="search">
+          </div>
+           <div class="barfoot">< < < < < < < < > > > > > > ></div>
+      </div>
+    </div>
+    <!-- 게시판 번호 -->
+      <div class="page-wrap">
+        <ul class="page-nation">
+          <li class="box1"><a href="#">1</a></li>
+          <li class="box2"><a href="#">2</a></li>
+          <li class="box3"><a href="#">3</a></li>
+          <li class="box4"><a href="#">4</a></li>
+          <li ><a href="#" class="box5">5</a></li>
+        </ul>
+      </div>  
+      </div>
+
+       <!-- 푸터 -->
+  <footer>
+    <div id="bottomMenu">
+      <ul>
+        <li><a href="#">회사 소개</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">사이트맵</a></li>
+      </ul>
+      <div id="sns">
+        <ul>
+          <li><a href="#"><img src="images/sns-1.png" width="50px"></a></li>
+          <li><a href="#"><img src="images/sns-2.png" width="50px"></a></li>
+          <li><a href="#"><img src="images/sns-3.png" width="50px"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="company">
+      <p>서울특별시 성동구 성수동 *** (대표전화) 02-****-****</p>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>

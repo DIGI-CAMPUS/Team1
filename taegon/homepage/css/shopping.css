@@ -1,0 +1,94 @@
+@import "header_nav.css";
+@import "footer.css";
+
+/*로고에 스타일을 입히기 위해 font.google.com 사이트에서 코드를 가져옴*/
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+
+@font-face {
+  font-family: "양진체";
+  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  box-sizing: border-box; /* 박스 영역은 테두리까지 */
+}
+a {
+  text-decoration: none; /* 텍스트 링크 밑줄 없애기 */
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  width: 1200px; /* 너비 */
+}
+
+#login {
+  float: right;
+  font-style: initial;
+  color: #fff;
+  font-weight: 600; /* 글자 굵기 */
+  text-shadow: 0 1px #07c; /* 그림자 추가 */
+}
+
+/* ====================================================================================== */
+
+#contents {
+  width: 100%; /* 너비 */
+  height: 100%; /* 높이 */
+  margin-top: 10px; /* 마진 추가 */
+  float: left;
+}
+#contents > h1 > span {
+  color: rgb(224, 114, 11);
+  font-size: 25px;
+}
+
+#contents > h1 {
+  color: #929692;
+  margin: 50px;
+  text-align: center;
+  font-family: "양진체";
+  font-size: 20px;
+}
+
+.timg {
+  width: 500px;
+  height: 300px;
+  float: left;
+  margin: 20px;
+}
+
+.tul {
+  width: 610px;
+  height: 300px;
+  float: left;
+  padding: 15px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+h2 {
+  padding: 5px;
+  font-family: "양진체";
+  font-size: 25px;
+  color: rgb(7, 99, 62);
+}
+h3 {
+  padding: 3px 1px 1px 5px;
+  font-family: "양진체";
+  font-size: 15px;
+  color: rgb(173, 178, 176);
+}
+
+li {
+  padding: 3px 1px 1px 5px;
+  font-family: "양진체";
+  color: #484c48;
+  font-size: 17px;
+}

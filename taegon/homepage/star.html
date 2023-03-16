@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성수 나들이</title>
+    <link rel="stylesheet" href="css/star.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="logo">
+          <a href="index.html">
+            <h1>성수 나들이</h1>
+          </a>
+        </div>
+        <nav>
+          <ul id="topMenu">
+            <li><a href="#">맛집 <span>▼</span></a>
+              <ul>
+                <li><a href="밥집.html">밥집</a></li>
+                <li><a href="조별과제.html">카페</a></li>
+              </ul>
+            </li>
+            <li><a href="#">놀거리<span>▼</span></a>
+              <ul>
+                <li><a href="popupstore.html">팝업스토어</a></li>
+                <li><a href="shopping.html">쇼핑</a></li>
+                <li><a href="star.html">별찍기</a></li>
+              </ul>
+            </li>
+            <li><a href="#">갤러리 </a></li>
+            <li><a href="#">문의하기</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+    <script>
+      var a, b;
+      var n;
+
+      alert("입력한 수만큼 별찍기");
+      n = prompt("숫자를 입력해 보세요.");
+
+      for (a = 1; a <= n; a++) {
+        for (b = 1; b <= a; b++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
